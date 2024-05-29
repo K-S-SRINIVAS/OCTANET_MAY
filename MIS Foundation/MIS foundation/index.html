@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS Foundation</title>
+    <link rel="shortcut icon" href="Imgs/misi0.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="i.css">
+</head>
+<body>
+    <header>
+        <div class="login">
+            <div class="MIS">
+                <img class="logo" src="Imgs/misi0.jpeg" alt="MIS">
+                <div class="full_form">Make iNDIA Self-Reliant</div>
+            </div>
+           <a href="" ><img class="log" src="Imgs/login.jpg" alt="login"></a>
+        </div>
+        <div class="nav_bar">
+            <ul class="nav_item">
+                <a class="nav" href="Index.html"><li>Home</li></a>
+                <a class="nav" href="" ><li>Projects</li></a>
+                <a class="nav" href=""><li>About Us</li></a>
+                <a class="nav" href=""><li>Contact Us</li></a>
+            </ul>
+        </div>
+        <div class="beaware">
+            <marquee class="moving_text" direction="rtl">Beaware of fradulent messages & websites!.Make donations only by logging into your account on website of MIS Foundation</marquee>
+        </div>
+    </header>
+    <main>
+        <div class="welcome">
+            <p class="hello">Welcome to MIS Foundation's digital platform</p>
+            <p id="donate">Donate with a open heart</p>
+        </div>
+        <div class="event_img">
+        <div class="arro" onclick="plusDivs(-1)">
+            <i class="fa-solid fa-angle-left fa-lg"></i>
+        </div>
+        <div class="card">
+            <img src="Imgs/misi1.jpg" alt="Quote">
+            <div>"Support us ,so that we can bring + change in lives of every Indian"</div>
+        </div>
+        <div class="card">
+            <img src="Imgs/misi2.jpg" alt="Tree plantation drive">
+            <div>Tree Plnatation Drive conducted in Durg</div>
+        </div>
+        <div class="card">
+            <img src="Imgs/misi3.jpg" alt="Blood donation camp">
+            <div>Blood Donation Camp organised at District Hospital</div>
+        </div>
+        <div class="card">
+            <img src="Imgs/misi4.jpg" alt="Book Distrubution Programme">
+            <div>Books distributed to unpriviliged students</div>
+        </div>
+        <div class="arro" onclick="plusDivs(1)">
+            <i class="fa-solid fa-angle-right fa-lg"></i>
+        </div>
+        </div>
+        <div class="presence">
+            <div >Our presence in 10 states</div>
+            <img src="Imgs/misi6.jpg" alt="">
+            <div id="coverage">with your support in pan India soon...</div>
+        </div>
+    </main>
+    <footer>
+        <a href="#"><div class="to-top">Back to Top</div></a>
+        <div class="spons">
+            <img src="Imgs/misi7.jpg" alt="Hitvada">
+            <img src="Imgs/misi8.jpeg" alt="bhilai times">
+            <img src="Imgs/misi9.png" alt="jindal furniture">
+        </div>
+        <div class="copyright">MIS Foundation <br>© All Rights Reserved </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("card");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
